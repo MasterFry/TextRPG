@@ -29,31 +29,31 @@ You can:
 
 #### Structure
 
-{ Items , Monsters , Regions , Merchants }
+    { Items , Monsters , Regions , Merchants }
 
 #### Items
 
-Items : [Item , ..]
+    Items : [Item , ..]
 
-Item : { Name(string) , Weight(int) , Price(int) , Type(int) [, Type-Specific-Values ] [, Description(string) ] }
+    Item : { Name(string) , Weight(int) , Price(int) , Type(int) [, Type-Specific-Values ] [, Description(string) ] }
     
-Types :
- * Trash  = 0:
- * Weapon = 1: AttackPower(int) , AttackSpeed(int)
- * Armor  = 2: Slot(int) , ArmorPoints(int)
- * Potion = 3: HealValue(int)
+    Types :
+        * [Trash  = 0]:
+        * [Weapon = 1]: AttackPower(int) , AttackSpeed(int)
+        * [Armor  = 2]: Slot(int) , ArmorPoints(int)
+        * [Potion = 3]: HealValue(int)
     
 #### Monsters
 
-Monsters : [Monster , ..]
+    Monsters : [Monster , ..]
 
-Monster : { Name(string) , Rarity(int) , AttackPower(int) , AttackSpeed(int) , LootTable(LootTable) , Dialog(Dialog) }
+    Monster : { Name(string) , Rarity(int) , AttackPower(int) , AttackSpeed(int) , LootTable(LootTable) , Dialog(Dialog) }
     
 #### Regions
 
-Regions : [Region , ..]
+    Regions : [Region , ..]
 
-Region : { Name(string) , Description(string) , Places : [Place , ..] , Cities : [City , ..] }
+    Region : { Name(string) , Description(string) , Places : [Place , ..] , Cities : [City , ..] }
 
 
     
