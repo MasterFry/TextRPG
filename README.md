@@ -38,10 +38,10 @@ Items : [Item , ..]
 Item : { Name(string) , Weight(int) , Price(int) , Type(int) [, Type-Specific-Values ] [, Description(string) ] }
     
 Types :
- - [Trash  = 0]: -
- - [Weapon = 1]: AttackPower(int) , AttackSpeed(int)
- - [Armor  = 2]: Slot(int) , ArmorPoints(int)
- - [Potion = 3]: HealValue(int)
+ * Trash  = 0:
+ * Weapon = 1: AttackPower(int) , AttackSpeed(int)
+ * Armor  = 2: Slot(int) , ArmorPoints(int)
+ * Potion = 3: HealValue(int)
     
 #### Monsters
 
