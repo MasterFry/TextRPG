@@ -27,6 +27,8 @@ You can:
     
 ### JSON File
 
+[General JSON File definition](http://json.org/)
+
 #### Structure
 
     { Items , Monsters , Regions , Merchants }
