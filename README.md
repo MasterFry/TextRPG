@@ -31,32 +31,39 @@ You can:
 
 #### Structure
 
-    { Items , Monsters , Regions , Merchants }
+    { Items , Mobs , Places , Regions , Merchants }
 
 #### Items
 
     Items : [Item , ..]
 
-    Item : { Name(string) , Weight(int) , Price(int) , Type(int) [, Type-Specific-Values ] [, Description(string) ] }
+    Item   : { Id(int) , Name(string) , Weight(int) , Price(int) [, Description(string) ] }
+    Weapon : { Id(int) , Name(string) , Weight(int) , Price(int) , AttackPower(int) [, Description(string) ] }
+    Armor  : { Id(int) , Name(string) , Weight(int) , Price(int) , ArmorPoints(int) [, Description(string) ] }
+    Potion : { Id(int) , Name(string) , Weight(int) , Price(int) , HealValue(int) [, Description(string) ] }
     
-    Types :
-        * [Trash  = 0]:
-        * [Weapon = 1]: AttackPower(int) , AttackSpeed(int)
-        * [Armor  = 2]: Slot(int) , ArmorPoints(int)
-        * [Potion = 3]: HealValue(int)
+#### Mobs
+
+    Mobs : [Mob , ..]
+
+    Mob : { Id(int) , Name(string) , AttackPower(int) , DropItemId(int) , Dialog(string) }
+
+#### Places
+
+    Places : [Place , ..]
     
-#### Monsters
-
-    Monsters : [Monster , ..]
-
-    Monster : { Name(string) , Rarity(int) , AttackPower(int) , AttackSpeed(int) , LootTable(LootTable) , Dialog(Dialog) }
+    Place : { Id(int) , Name(string) , MobId(int) }
+    Place : { Id(int) , Name(string) , MerchantId(int) }
     
 #### Regions
 
     Regions : [Region , ..]
 
-    Region : { Name(string) , Description(string) , Places : [Place , ..] , Cities : [City , ..] }
+    Region : { Name(string) , Description(string) , PlaceIds[int , ..] }
 
+#### Merchants
 
+    Merchants : [Merchant , ..]
     
+    Merchant : { Id(int) , Name(string) , SellItemId(int) }
     

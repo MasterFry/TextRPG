@@ -1,0 +1,43 @@
+{
+
+  "Items" : [
+    { "Id" : 2 , "Name" : "Iron Sword" , "Weight" : 15 , "Price" : 30 , "AttackPower" : 4 },
+    { "Id" : 4 , "Name" : "Steel Sword" , "Weight" : 15 , "Price" : 50 , "AttackPower" : 6 },
+    { "Id" : 6 , "Weight" : 1 , "Price" : 100 , "Name" : "Emerald" },
+    { "Id" : 8 , "Name" : "Leather Armor" , "Weight" : 10 , "Price" : 20 , "ArmorPoints" : 5 },
+    { "Id" : 7 , "Name" : "Iron Armor" , "Weight" : 25 , "Price" : 40 , "ArmorPoints" : 8 }
+  ],
+
+  "Mobs" : [
+    { "Id" : 1 , "Name" : "Slime" , "AttackPower" : 1 , "DropItemId" : 2 , "Dialog" : "Blob." },
+    { "Id" : 2 , "Name" : "Bandit" , "AttackPower" : 2 , "DropItemId" : 8 , "Dialog" : "I'll have your head!" },
+    { "Id" : 3 , "Name" : "Orc" , "AttackPower" : 3 , "DropItemId" : 4 , "Dialog" : "Silly Human is Silly!" }
+  ],
+
+  "Places" : [
+    { "Id" : 3 , "Name" : "Ironforge" , "MerchantId" : 1 },
+    { "Id" : 6 , "Name" : "Lights Breach" , "MerchantId" : 2 },
+    { "Id" : 5 , "Name" : "Fairly dangerous road" , "MobId" : 3 },
+    { "Id" : 1 , "Name" : "Bandit Cave" , "MobId" : 2 },
+    { "Id" : 0 , "Name" : "Starting Grounds" , "MobId" : 1 }
+  ],
+
+  "Regions" : [
+    {
+      "Name" : "Human Lands" ,
+      "Description" : "The Human Lands are a generally fairly flat landscape with just a few hills every now and then. King Robert is the current Ruler since the year 2903" ,
+      "PlaceIds" : [ 6 , 0 , 1 ]
+    },
+    {
+      "Name" : "\"The North\"" ,
+      "Description" : "Since there is a \"North\" everywhere, there is one here aswell. Due to is cold climate the North is populated mainly by draven since they seem to be more resistant to the cold climate." ,
+      "PlaceIds" : [ 3 , 5 ]
+    }
+  ],
+
+  "Merchants" : [
+    { "Id" : 1 , "Name" : "Durn Ironbeard" , "SellItemId" : 7 },
+    { "Id" : 2 , "Name" : "Sam Silvereye" , "SellItemId" : 6 }
+  ]
+
+}
